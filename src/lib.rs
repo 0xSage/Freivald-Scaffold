@@ -1,17 +1,16 @@
-#![allow(arithmetic_overflow)]
-use ndarray::{Array1, Array2};
-use rand::Rng;
+use ark_bls12_381::Fr;
+use ndarray::Array2;
 
-pub fn freivald_verify(a: &Array2<u128>, b: &Array2<u128>, c: &Array2<u128>) -> bool {
+pub fn freivald_verify(a: &Array2<Fr>, b: &Array2<Fr>, c: &Array2<Fr>) -> bool {
     unimplemented!()
 }
 
-pub fn dumb_verify(a: &Array2<u128>, b: &Array2<u128>, c: &Array2<u128>) -> bool {
+pub fn dumb_verify(a: &Array2<Fr>, b: &Array2<Fr>, c: &Array2<Fr>) -> bool {
     assert!(check_matrix_dimensions(a, b, c));
     a.dot(b) == c
 }
 
-pub fn check_matrix_dimensions(a: &Array2<u128>, b: &Array2<u128>, c: &Array2<u128>) -> bool {
+pub fn check_matrix_dimensions(a: &Array2<Fr>, b: &Array2<Fr>, c: &Array2<Fr>) -> bool {
     a.nrows() == b.ncols()
         && a.ncols() == b.nrows()
         && c.nrows() == a.nrows()
