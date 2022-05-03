@@ -1,6 +1,6 @@
 # Freivald-Rust
 
-A Rust implementation of Freivald's algorithm on matrix multiplication verification.
+A Rust implementation of Freivald's algorithm on matrix multiplication verification over `ark_bls12_381::Fr`.
 
 The point is to illustrate Freivalds’ algorithm does save runtime compared to the best known deterministic algorithm.
 
