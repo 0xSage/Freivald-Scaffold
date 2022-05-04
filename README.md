@@ -1,6 +1,6 @@
 # Freivald-Rust
 
-A Rust implementation of Freivald's algorithm on matrix multiplication verification over `ark_bls12_381::Fr`.
+A starter implementation for Freivald's algorithm over `ark_bls12_381::Fr`.
 
 The point is to illustrate Freivalds’ algorithm does save runtime compared to the best known deterministic algorithm.
 
@@ -11,3 +11,5 @@ Implement the `unimplemented!` block, then run:
 cargo test
 cargo bench
 ```
+### Solution
+[Full Solution](https://github.com/0xSage/freivald)
